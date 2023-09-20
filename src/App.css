@@ -36,3 +36,104 @@
     transform: rotate(360deg);
   }
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Reset default styles to ensure consistent rendering across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a common font and background color for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Center the content within the page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Create a stylish header */
+.header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Add some space between the header and the main content */
+.content {
+  margin-top: 20px;
+}
+
+/* Style buttons with a gradient background and rounded corners */
+.button {
+  background-image: linear-gradient(to bottom, #4c72ff, #0033cc);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-image: linear-gradient(to bottom, #4361ee, #0033cc);
+}
+
+/* Add a subtle shadow effect to elements */
+.shadow {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Apply responsive design to make the website mobile-friendly */
+@media (max-width: 768px) {
+  /* Modify styles for smaller screens */
+  .container {
+    flex-direction: column;
+  }
+
+  .input {
+    width: auto;
+  }
+}

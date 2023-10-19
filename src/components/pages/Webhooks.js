@@ -21,7 +21,7 @@ const WebhookExample = () => {
 
   return (
     <div>
-      <h1>Webhook Example</h1>
+      <h1>Fetching user data from api</h1>
       {data.map((item) => (
         <p key={item.id}>{item.title}</p>
       ))}

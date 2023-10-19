@@ -18,6 +18,12 @@ class Navbar extends React.Component {
           <li className="nav-item">
             <Link to="/Webhooks" className="nav-link">Webhook example</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/Counter" className="nav-link">useState Counter</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/Table" className="nav-link">Table example</Link>
+          </li>
         </ul>
       </nav>
     );

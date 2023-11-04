@@ -7,7 +7,7 @@ const WebhookExample = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://jsonplaceholder.typicode.com/users/1/albums"
+          "https://jsonplaceholder.typicode.com/users"
         );
         const responseData = await response.json();
         setData(responseData);
@@ -20,11 +20,28 @@ const WebhookExample = () => {
   }, []);
 
   return (
-    <div>
+    <div className="webhooks">
       <h1>Fetching user data from api</h1>
-      {data.map((item) => (
-        <p key={item.id}>{item.title}</p>
-      ))}
+      <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((item) => (
+          <tr key={item.id}>
+            <td>{item.id}</td>
+            <td>{item.name}</td>
+            <td>{item.email}</td>
+            <td>{item.phone}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
     </div>
   );
 };

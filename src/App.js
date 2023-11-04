@@ -5,8 +5,8 @@ import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Webhooks from './components/pages/Webhooks';
 import Counter from './components/pages/Counter';
-import Table from './components/pages/Table';
 import './App.css';
+import LoginPage from './components/pages/LoginPage';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/Webhooks" element={<Webhooks/>} />
             <Route path="/Counter" element={<Counter/>} />
-            <Route path="/Table" element={<Table/>} />
+            <Route path="/LoginPage" element={<LoginPage/>} />
           </Routes>
         </div>
       </Router>

@@ -22,7 +22,7 @@ class Navbar extends React.Component {
             <Link to="/Counter" className="nav-link">useState Counter</Link>
           </li>
           <li className="nav-item">
-            <Link to="/Table" className="nav-link">Table example</Link>
+            <Link to="/LoginPage" className="nav-link">Login example</Link>
           </li>
         </ul>
       </nav>

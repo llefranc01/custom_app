@@ -15,23 +15,23 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform login logic here
-    console.log('Email:', email);
-    console.log('Password:', password);
+    alert('Email:', email);
+    alert('Password:', password);
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
+      <form onSubmit={handleSubmit} className="login-form">
+        <div className="form-group">
           <label>Email:</label>
           <input type="email" value={email} onChange={handleEmailChange} />
         </div>
-        <div>
+        <div className="form-group">
           <label>Password:</label>
           <input type="password" value={password} onChange={handlePasswordChange} />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className="login-button">Login</button>
       </form>
     </div>
   );

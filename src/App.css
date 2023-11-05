@@ -214,14 +214,6 @@ th, td {
   color: #37a6a6;
 }
 
-p {
-  color: #61dafb
-}
-
-h1 {
-  color: #61dafb
-}
-
-h2 {
+p, h1, h2 {
   color: #61dafb
 }

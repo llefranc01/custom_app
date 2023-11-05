@@ -7,7 +7,7 @@ class About extends React.Component {
     return (
       <div className="About">
         <h1>About me</h1>
-        <p>I am a technically astute and solutions-oriented professional with extensive experience in developing applications and software services, leveraging advanced expertise of latest programming languages and modern frameworks.</p>
+        <p className="summary">Strong foundation in JavaScript frameworks, including React.js and Ext.js, complemented by proficiency in HTML and CSS. Skilled at coding machine learning algorithms using Python, leveraging libraries such as NumPy, Pandas, Scikit-learn, TensorFlow, and Keras to develop robust and scalable solutions. Well-versed in APIs integrations and implementation to enhance responsiveness of applications. Hands-on experience with AWS and Microsoft Azure, deploying and managing cloud-based solutions using various services on both platforms. Superlative in pinpointing and resolving application functionality issues swiftly. Solid competences in initiating projects from scratch and jumping into an existing architecture, ensuring successful on-time execution. Articulate communicator with excellent problem-solving and analytical skills along with strong research capabilities.</p>
       </div>
     );
   }
